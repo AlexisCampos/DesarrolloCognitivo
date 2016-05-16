@@ -1,0 +1,454 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+\documentclass{bmcart}
+
+%%% Load packages
+%\usepackage{amsthm,amsmath}
+%\RequirePackage{natbib}
+%\RequirePackage[authoryear]{natbib}% uncomment this for author-year bibliography
+%\RequirePackage{hyperref}
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %%
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %%
+%%  submitted article.                         %%
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\def\includegraphic{}
+\def\includegraphics{}
+
+
+
+%%% Put your definitions there:
+\startlocaldefs
+\endlocaldefs
+
+
+%%% Begin ...
+\begin{document}
+
+%%% Start of article front matter
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Research}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Desarrollo Cognoscitivo }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Specify information, if available,       %%
+%% in the form:                             %%
+%%   <key>={<id1>,<id2>}                    %%
+%%   <key>=                                 %%
+%% Comment or delete the keys which are     %%
+%% not used. Repeat \author command as much %%
+%% as required.                             %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+   addressref={aff1},                   % id's of addresses, e.g. {aff1,aff2}
+   corref={aff1},                       % id of corresponding address, if any
+   noteref={n1},                        % id's of article notes, if any
+   email={camposlopezalexis@gmail.com}   % email address
+]{\inits{JE}{Alexis Campos López} {}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%% Repeat \address commands as much as      %%
+%% required.                                %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{Instituto Tecnológico de Tijuana} % university, etc
+  \street{},                     %
+  %\postcode{}                                % post or zip code
+  \city{Tijuana},                              % city
+  \cny{B.C}                                    % country
+}
+\address[id=aff2]{%
+  \orgname{},
+  \street{},
+  \postcode{}
+  \city{},
+  \cny{}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+\note[id=n1]{} % note, connected to author
+\end{artnotes}
+
+\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstractbox}
+
+\renewcommand{\abstractname}{Resumen}\begin{abstract} % abstract
+{} %if any
+
+\begin{flushleft}
+
+En este documento se analiza el concepto Desarrollo Cognitivo así como, las diferentes teorías de psicólogos diversos de alto prestigio como lo son Piaget del cual analizaremos sus diferentes principios del desarrollo, conociendo más a fondo acerca de sus ideas constructivista. También se conocerá la idea Vygotsky la cual va más enfocada acerca a un movimiento conductual.
+\newline
+\newline
+\newline
+El profesor tiene una tarea muy importante en lo que al desarrollo del sujeto se refiere dado que es el principal responsable en el desarrollo intelectual de la persona, tendrá que encargarse de como el alumno se relaciona con los demás y participación en clase.
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\end{flushleft}
+
+
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The keywords begin here                  %%
+%%                                          %%
+%% Put each keyword in separate \kwd{}.     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \section*{Palabras Clave}\begin{keyword}
+\kwd{Cognitivo}
+\kwd{Constructivismo}
+\kwd{Conductual}
+\kwd{Conocimiento}
+\kwd{Interracción}
+\kwd{Desarrollo}
+\newline
+\newline
+\end{keyword}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%
+\newpage
+\tableofcontents
+
+ %\cite{koon,oreg,khar,zvai,xjon,schn,pond,smith,marg,hunn,advi,koha,mouse}
+\newpage
+\section{Introducción}
+A continuación en este ensayo se relatará sobre el desarrollo cognitivo en las personas de diferente variedad de edad. Se darán a conocer los diferentes puntos de vista de los principales pedagogos que han surgido a lo largo estos años.
+\newline 
+Principalmente se centrarán en cuales fueron los motivos de su aprendizaje, así como, los conflictos psicológicos, culturares e históricos que pudieron afectar en la vida de cierto individuo.
+\newline 
+Grandes personalidades que influyeron en la educación como hoy la conocemos tales como Piaget, Vygotsky, Gardner, entre otros autores, serán reconocidas a través de este documento, plasmando todos los aportes que los ya mencionados hicieron para la educación y el aprendizaje de las personas, también se mostrará diferentes teorías que tuvieron dado que estos no concuerdan en muchos de sus pensamientos, pero cada uno tiene sus ideales muy factibles y las pruebas necesarias para comprobarlas.
+\newline 
+Una manera de comprender lo que es el desarrollo cognoscitivo en una persona es a través de su interacción con medio que lo rodea, por lo cual, es necesario conocerse a uno mismo para saber hasta donde uno puede llegar.
+
+\section{Justificación }
+La realización de este proyecto es debido a mi entusiasmo por ejercer la carrera de docencia con mi carrera, y el estudio de todos estos psicólogos fortalecerá mi conocimiento acerca de educación y sobre qué actos podré realizar para que mi enseñanza sea lo suficiente, a raíz de lo investigado podré darme una idea de a lo que me enfrentaré en un futuro.
+
+\section{Objetivos Generales}
+	\begin{itemize}
+\item Conseguir una idea más clara de lo que es la educación.
+\newline 
+\item Conocer más acerca de distintos psicólogos importantes.
+\newline 
+\item Observar que tan apto soy para la realización de un documento formal.
+	\end{itemize}
+		
+\section{Objetivos específicos}
+\begin{itemize}
+\item Saber qué factores pueden influir en un futuro en la educación.
+\newline 
+\item Hacer un análisis de diferentes puntos de vista.
+\newline 
+\item Saber qué puedo hacer para mejorar intelectualmente.
+	\end{itemize}
+
+\newpage
+\section{Desarrollo Cognoscitivo según Piaget}
+Piaget un psicólogo muy reconocido principalmente por sus aportes al desarrollo de la inteligencia y sus múltiples investigaciones sobre el estudio de la infancia, mencionó que los niños buscan activamente el conocimiento a partir de sus interacciones con el medio ambiente,  y que estos poseen su propia lógica y medios de conocer que evoluciona con el tiempo. [1] 
+\newline
+\newline
+Piaget propuso 4 factores relacionados con todo el desarrollo cognoscitivo; la madures, la experiencia activa, la interacción y la progresión general del equilibrio (Piaget 1961, p. 277). Consideró también que la interacción de estos factores establecen las condiciones necesarias para el desarrollo cognoscitivo, pero un factor por sí solo no era suficiente para lograr el desarrollo cognoscitivo.
+\newline
+\newline
+El constructivismo educativo propone un proceso donde la enseñanza se percibe y se lleva a cabo como un proceso dinámico, participativo e interactivo del sujeto, de modo que el conocimiento sea una auténtica construcción operada por la persona que aprende El constructivismo en pedagogía se aplica como concepto didáctico en la enseñanza orientada a la acción.(Coll, 1994).[2]
+\newline
+\newline
+Esta era la manera de personar de Piaget un enfoque constructivista donde pensaba que  los niños  construyen  activamente el  conocimiento  del  ambiente usando lo  que  ya  saben  e  interpretando  nuevos  hechos y  objetos.  La  investigación  de Piaget se  centró  fundamentalmente  en  la  forma  en  que  adquieren  el  conocimiento  al  ir desarrollándose. En otras palabras, no le interesaba tanto lo que conoce el niño, sino cómo piensa  en  los  problemas  y  en  las  soluciones. [1]
+\newline
+\newline
+Piaget consideró que el desarrollo estaba compuesto por tres elementos; el contenido, la función y la estructura. Donde el contenido consiste en lo que el individuo sabe, se refiere a las conductas observables que se reflejan en actividad intelectual. La función va enfocada a las características a la actividad intelectual, aquí entra la asimilación y la acomodación. La estructura se refiere a las propiedades de organización inferidas, los esquemas; que explican la presencia de determinadas conductas. [6]
+\newline
+\newline
+Piaget propuso los principios del desarrollo que el  primero  es  la  organización  que,  de  acuerdo  con Piaget,  es  una  predisposición  innata  en  todas  las  especies.  Conforme  el  niño  va madurando, integra los patrones físicos simples o esquemas mentales a sistemas más complejos.  El  segundo  principio  es  la  adaptación es en el que los  organismos nacen  con  la  capacidad  de  ajustar  sus  estructuras  mentales  o  conducta  a  las exigencias del ambiente. [3]
+\newline
+\newline
+Otros principios del desarrollo es de asimilación el cual consiste en como el sujeto logra adaptarse a través de su propia acción sobre los objetos que lo rodean, se podría decir que el individuo va formando un mundo de cierta manera a su forma de pensar. [4] Prácticamente lo contrario del principio anterior llega proceso de acomodación el cual nos habla de que el sujeto es quien tiene que ajustarse a las condiciones del ambiente, es decir, como el sujeto va acomodando sus esquemas anteriores para tener una idea más clara de lo que ya conoce.
+\newline
+\newline
+Piaget se interesó principalmente en la estructura de la inteligencia donde se incluye la descripción y el análisis cuidadoso de los cambios cualitativos en el desarrollo de estas estructuras cognoscitivas. [6]
+ \ldots
+
+\section{Desarrollo Cognoscitivo según Vygotsky}
+Lev Vygotsky fue otro psicólogo fue otro destacado pedagogo que influyó en lo que hoy conocemos como educación dado que su forma de pensar era distinta a la Piaget puesto que el afirmaba no es posible entender el desarrollo de un individuo si no se conoce la cultura donde se cría, tanto la historia de la cultura del sujeto como la experiencia personal son importantes para comprender el desarrollo cognoscitivo. Este forma de pensar de Vygotsky refleja su idea entender cultural-histórica del desarrollo [1].
+\newline
+\newline
+Las interacciones que favorecen el desarrollo incluyen la ayuda activa, la participación guiada por parte alguien con más experiencia. La persona más experimentada puede dar consejos o pistas, hacer de modelo, hacer preguntas o enseñar estrategias, entre otras cosas, para que el sujeto pueda hacer aquello, que de entrada no sabría hacer solo. (Silva. L y col., 1995).
+\newline
+\newline
+La teoría de Vygotsky se demuestra en aquellas aulas dónde se favorece la interacción social, dónde los profesores hablan con los niños y utilizan el lenguaje para expresar aquello que aprenden, dónde se anima a los niños para que se expresen oralmente y por escrito y en aquellas clases dónde se favorece y se valora el diálogo entre los miembros del grupo. [3]
+\ldots
+\section{Convivencia como factor de aprendizaje}
+Es lógico que "aprender a convivir" sea un objetivo educativo prioritario, porque no nacemos educados para la convivencia. Uno como persona no sabe sobre sus capacidades para entablar un platica son de herencia o son aprendidas, sobre la capacidad para convivir y el conjunto de destrezas y habilidades que esta capacidad encierra, a partir del momento de su nacimiento comienza a construirse como ser social, aprende patrones de conducta y aprende a resolver los desafíos. [5].
+\newline
+\newline
+El aprendizaje de la convivencia no se realiza únicamente en los centros educativos, sino que también se aprende a convivir en el grupo de iguales, en la familia y a través de los medios de comunicación. Además de estos ámbitos más próximos a los estudiantes y profesorado, tampoco se debe olvidar un ámbito macro que tiene que ver con los contextos económicos, sociales y políticos en los que estamos inmerso. (Cerrillo Martin, 2002)
+\newline
+\newline
+El convivir es una práctica de suma importancia para los estudiantes dado que así desarrolla los aprendizajes obtenidos, demuestran de lo que son capaces y aprenden de lo que otros estudiantes pueden ofrecerles y así estimular su mente.
+\newline
+\newline
+El profesor debe desempeñar el papel de mediador que interviene en el intento de modificar las estructuras cognitivas en el alumno. El profesor debe ser el animador, presentando las tareas y explicando lo que es estrictamente necesario; además debe facilitar la reflexión sistemática que favorezca la modificación de las estructuras cognitivas. [10]
+\newline
+\newline
+No cabe duda de que el profesor es un modelo de conducta para sus alumnos, por lo que debe fortalecer de forma específica la  formación en habilidades   sociales. La sociedad demanda un determinado tipo de ciudadano capaz de adaptarse a los cambios, tomar decisiones, comunicarse con los demás, trabajar en equipo, liderar grupos, resolver conflictos buscando soluciones creativas, es necesario desarrollar las habilidades sociales que permitan llevar a cabo estas tareas  satisfactoriamente.
+\newline
+\newline
+En la etapa del pensamiento formal, el adolescente desarrolla la capacidad para imaginar las posibilidades a una situación, antes de actuar sobre un problema el adolescente ya comienza a formar un análisis y elaborar sus propias hipótesis de las consecuencias que una acción pueda ocasionar, el pensamiento es mas flexible y poderoso que a esa edad ya alcanza un nivel alto de equilibrio en el razonamiento. [7]
+
+\section{Teoría de las inteligencias múltiples de Gardner}
+
+Una persona se puede decir que alcanzó el desarrollo intelectual suficiente dadas sus calificaciones o actitudes, pero esto no es así según Gardner dado que él pensaba que una persona es inteligente dependiendo sus distintas habilidades intelectuales. Entonces fue ahí donde Gardner definió diferentes criterios para comprobar la inteligencia de cierto individuo. [8]
+	\newline
+	\newline
+Los criterios que Gardner para saber sí una persona es intelectualmente hábil son: La inteligencia lingüística; que describe la capacidad de percibir o producir el lenguaje hablado,  la inteligencia lógica/matemática; que incluye el uso o la apreciación numérica, la inteligencia espacial; que consiste en transformar o modificar una información; la inteligencia musical, la inteligencia corporal; en el cual entra las habilidades propias del cuerpo para controlar los problemas, la inteligencia interpersonal; que incluye la capacidad la capacidad de reconocer y hacer distinciones entre los sentimientos, las creencias y la intenciones de otras personas, la inteligencia intrapersonal; que es donde sabes distinguir los sentimientos propios y prever reacciones a cursos de acción futuros y por último la inteligencia naturalista que incluye la capacidad de comprender y trabajar en forma efectiva en el mundo natural (Gardner, 1999).[8]
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section{Trabajos futuros}
+  
+  A raíz de este proyecto pretendo darme una idea de lo que quiero lograr en mi futuro, así como cuáles son los cambios que han sucedido en la educación a lo largo de los años. Formular hipótesis acerca de lo que puedo llegar con base a este documento. Analizar lo que diferentes autores piensan acerca de la educación y así yo darme una idea lo que quiero hacer con ello.
+  \
+  \
+  \
+  \
+  \section{Conclusión}
+  Con el documento elaborado puedo darme cuenta que los autores tienes sus propia perspectiva acerca del desarrollo intelectual, mientras Piaget piensa que es más importante la relación medio que lo rodea, Vygotsky dice que la interacción con medio social es más importante. Podrá cada uno tener sus propias opiniones pero cada uno de los psicólogos hace sus propias teorías con base en sus fundamentos, no podemos decir que uno está mal dado que cada quien tienes sus hipótesis. 
+  Uno como profesor tiene como principal objetivo que su alumno desarrollo más conocimiento, y el docente debe encargarse de ello, estando en constante comunicación con él y observando cuáles son sus principales virtudes.
+  Es una carrera muy bonita que obviamente como todo se irá cambiando pero uno debe buscar las maneras de adaptarse al mundo que lo rodea, enfocándose principalmente en el desarrollo del conocimiento del alumno.
+  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%
+%%  Bmc_mathpys.bst  will be used to                       %%
+%%  create a .BBL file for submission.                     %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %%
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %%
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% if your bibliography is in bibtex format, use those commands:
+\bibliographystyle{bmc-mathphys} % Style BST file (bmc-mathphys, vancouver, spbasic).
+\bibliography{bmc_article}      % Bibliography file (usually '*.bib' )
+% for author-year bibliography (bmc-mathphys or spbasic)
+% a) write to bib file (bmc-mathphys only)
+% @settings{label, options="nameyear"}
+% b) uncomment next line
+%\nocite{label}
+
+% or include bibliography directly:
+% \begin{thebibliography}
+% \bibitem{b1}
+% \end{thebibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Figures                       %%
+%%                               %%
+%% NB: this is for captions and  %%
+%% Titles. All graphics must be  %%
+%% submitted separately and NOT  %%
+%% included in the Tex document  %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Do not use \listoffigures as most will included as separate files
+
+\newpage
+\renewcommand{\refname}{Referencias}\begin{thebibliography}{X}
+\bibitem{Baz} \textsc{Meece, J. (2000). Desarrollo del niño y del adolescente. México, D.F.: SEP}
+\bibitem{Baz} \textsc{Coll, C. (1994). De que hablamos cuando hablamos de constructivismo. Cuadernos de Pedagogía.}
+\bibitem{Baz} \textsc{García González, E. (2010). Pedagogía constructivista y competencias. México: Trilllas.}
+\bibitem{Baz} \textsc{Piaget, J. (1975). Introducción a la epistemología genética. Buenos Aires: Paidos.}
+\bibitem{Baz} \textsc{Cerrillo Martin, R. (2002). Enseñar a convivir, una tarea del tutor. Tendencia Pedagógicas, 179.}
+\bibitem{Baz} \textsc{Wadsworth, B. (1989). Teoría de Piaget del desarrollo cognoscitivo y afectivo. México, D.F.: Diana.}
+
+\bibitem{Baz} \textsc{Ginsburg, H. (1986). Piaget y la teoría del desarrollo intelectual. México, D.F.: Prentice Hall.
+}
+\bibitem{Baz} \textsc{Anderson, M. (2001). Desarrollo de la inteligencia. México, D.F.: Alfaomega.}
+\bibitem{Dan} \textsc{Sastre, S. (2001). Desarrollo cognitivo diferencial e intervenciòn psicoeducativa. Contextos educativos.}
+\bibitem{Dan} \textsc{Martin Bravo, C. (2009). Psicologìa para el desarrollo de los docentes. Mèxico: Piràmide.
+}
+
+\bibitem{Dan} \textsc{EcuRed. (08 de 05 de 2010). EcuRed.cu. Recuperado el 07 de 05 de 2016, de http://www.ecured.cu/Desarrollocognitivoocognoscitivo
+}
+\end{thebibliography}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Tables                        %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Use of \listoftables is discouraged.
+%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% Additional Files              %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
